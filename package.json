@@ -1,0 +1,24 @@
+{
+  "name": "contacts-app-st2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongoose": "^6.2.0"
+  },
+  "scripts": {
+    "server": "nodemon backend/index.js",
+    "client": "npm run start --prefix frontend",
+    "dev": "concurrently \"nodemon backend/index.js\" \"npm run start --prefix frontend\" ","install": "",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npp run build --prefiii frontend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
